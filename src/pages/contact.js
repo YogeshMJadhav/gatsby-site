@@ -4,17 +4,42 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Fade from 'react-reveal/Fade';
-
-const Contact = () => (
-<Layout>
+class Contact extends React.Component {
+    render(){
+        return(
+            // <div>
+            //     <form 
+            //         name="contact"
+            //         method="POST"
+            //         data-netlify="true"
+            //         data-netlify-honeypot="bot-field"
+            //     >
+            //         <input type="text" name="firstname"  placeholder="First Name"/>
+            //         <input type="text" name="lastname" placeholder="Last Name"/>
+            //         <input type="email" name="email"  placeholder="Email"/>
+            //         <input type="text" name="subject" placeholder="Subject"/>
+            //         <textarea name="message"  placeholder="Message" id="inputMessage" rows="3"></textarea>
+            //         <button>Send Message</button>
+            //     </form>
+            // </div>
+            <Layout>
   <SEO title="Contact" />
   <Fade>
-    <div className="wrapper">
-        <div className="pagebanner">
-        <div className="pagebannerMax">
-            <h1 className="white">Contact Us</h1>
+        <div>
+            <form name=" contact"
+                  method="post"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+            >
+             <input type="text" name="First Name" placeholder="First Name" />
+             <input type="text" name="Last Name" placeholder="Last Name"/>
+             <input type="text" name="email"placeholder="email" />
+             <input type="text" name="Address" placeholder="Address" />
+             <input type="text" name="Subject" placeholder="subject" />
+             <button>Save</button>
+            </form>
         </div>
-        </div>
+<<<<<<< HEAD
         <div className="whatWeSection pb-5">
             <div className="container">
                 <div className="row">
@@ -77,7 +102,13 @@ const Contact = () => (
         </div>        
     </div>
   </Fade>
+=======
+        
+        </Fade>
+>>>>>>> b7f9f3fc5599fe054ae21c6dea8a1760a34ceff0
 </Layout>
-)
+        )
+    }
+}
 
 export default Contact;
