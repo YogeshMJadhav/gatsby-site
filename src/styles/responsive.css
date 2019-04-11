@@ -1,0 +1,152 @@
+
+@media (max-width:768px){
+   .top-line{
+   display:none;
+   }
+   
+   
+   }
+
+   
+   
+   @media (max-width:767px){
+       
+   .footerNav p{
+   margin-left: 0px!important;
+   }
+   .phone1 , .phone2 , .email{
+   margin-bottom: 5px;
+   }
+  }
+   
+
+   
+   @media (max-width:512px){
+   .footerContact{
+      display:block!important;
+   }
+   hr{
+      width:100%;
+   }
+   .footerNav{
+      flex-wrap: wrap;
+   }
+   }
+   @media (max-width:597px){
+      .footerNav{
+          border-bottom: 1px solid #ddd;
+          padding-bottom: 1rem;
+      }
+   }
+   @media (max-width:733px){
+   .mainPhone , .mainEmailSocial{
+      display: block!important;
+   }
+   }
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:552px){
+
+  .react-reveal .slick-prev {
+     left: 10px;
+  }   
+  .react-reveal .slick-next {
+     right: 25px;
+  }
+
+  pt-5{ padding-top: 2rem !important}
+
+}
+
+
+
+
+/* rahul added media */
+
+
+
+
+
+@media (max-width:768px){
+  .footer { padding:2rem }
+  .pagebanner,.pagebanner.pagebannerLess{ padding:50px 20px;}
+  .slider{ padding:50px 20px; }
+  .react-reveal .slick-next, .react-reveal .slick-prev{ display: none !important; }
+  .mainNavBar .container{ max-width: 100%;}
+
+.navbar-light .navbar-nav .nav-link {
+   color: black;
+   border-top: 1px solid #ddd;
+   padding-left: 10px;
+}
+.navbar-light .navbar-nav .nav-link:hover{ background:#f7f7f7; }
+
+}
+
+
+@media (max-width:552px){
+   .pagebanner{ padding: 20px;}
+   .p-5{ padding:1.75rem !important;}
+   .pt-5{ padding-top: 1.75rem !important; }
+   .mb-5{ margin-bottom:  1.75rem !important;}
+   .slider h1, .pagebanner h1{ font-size: 35px;}
+   .slider p{ display: none;}
+   .slider{ min-height:310px;}
+   h2{ font-size: 1.75rem;}
+   h3{ font-size: 1.5rem;}
+   .pagebanner h3{ margin-bottom:  0 !important;}
+   .banner-icons{ margin-top: 10px; }
+   .navbar-toggler:not(:disabled):not(.disabled){ border:0;}
+   .font-large{ font-size:1.1em;}
+   
+}
+
+
+@media (max-width:380px){
+   .p-5{ padding: 1.5rem !important;}
+   .slider h1, .pagebanner h1{ font-size: 30px;}
+   h2{ font-size: 1.65rem;}
+   h3{ font-size: 1.4rem;}
+   .font-large{ font-size:1em;}
+
+
+   .slider {
+      display: flex;
+      align-items: center;
+
+  }
+
+   .sliderMax {
+      max-width: 650px;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+  }
+
+
+}
+
+
+
+
+
+
+
+
