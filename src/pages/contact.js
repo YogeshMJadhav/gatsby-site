@@ -6,11 +6,6 @@ import SEO from "../components/seo"
 import Fade from 'react-reveal/Fade';
 
 class Contact extends React.Component{
-
-    function(e){
-        e.preventDefault();
-    }
-
     render(){
         return(
 <Layout>
@@ -60,7 +55,7 @@ class Contact extends React.Component{
                                                 <label htmlFor="inputMessage">Message </label>
                                                 <textarea name="message" className="form-control" placeholder="Message" id="inputMessage" rows="3"></textarea>
                                             </div>
-                                        <button type="submit" className="btn btn-primary" onClick={this.function} >Send Message</button>
+                                        <button type="submit" className="btn btn-primary"  >Send Message</button>
                                         </form>
                                 </div>
                                 <div className="col-md-5">
