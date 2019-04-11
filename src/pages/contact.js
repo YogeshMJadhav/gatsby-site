@@ -30,11 +30,11 @@ class Contact extends React.Component{
                             <div className="row">
                                 <div className="col-md-7 mb-5">
                                     <h3 className="mb-4"> Contact Form </h3>
-                                        <form onSubmit = {this.function}
+                                        <form 
                                             name="contact"
-                                            method="post"
+                                            method="POST"
                                             data-netlify="true"
-                                            data-netlify-honeypot="bot-field"
+                                            // data-netlify-honeypot="bot-field"
                                         >
                                             <div className="form-row">
                                                 <div className="form-group col-lg-6">
@@ -60,7 +60,7 @@ class Contact extends React.Component{
                                                 <label htmlFor="inputMessage">Message </label>
                                                 <textarea name="message" className="form-control" placeholder="Message" id="inputMessage" rows="3"></textarea>
                                             </div>
-                                        <button type="submit" className="btn btn-primary">Send Message</button>
+                                        <button type="submit" className="btn btn-primary" onClick={this.function} >Send Message</button>
                                         </form>
                                 </div>
                                 <div className="col-md-5">
