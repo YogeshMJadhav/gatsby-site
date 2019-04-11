@@ -26,8 +26,6 @@ const Contact = () => (
                                         <form 
                                             name=" contact"
                                             method="post"
-                                            data-netlify="true"
-                                            data-netlify-honeypot="bot-field"
                                         >
                                             <div className="form-row">
                                                 <div className="form-group col-lg-6">
