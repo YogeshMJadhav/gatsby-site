@@ -39,6 +39,7 @@ class Contact extends React.Component {
              <button>Save</button>
             </form>
         </div> */}
+        <div>
         <form 
             name="contact"
             method="post"
@@ -55,7 +56,6 @@ class Contact extends React.Component {
                 <label htmlFor="inputLastName">Last Name</label>
                 <input type="text" name="lastname" className="form-control" id="inputLastName" placeholder="Last Name"/>
                 </div>
-                
             </div>
             <div className="form-group">
             <label htmlFor="inputEmail">Email</label>
@@ -71,6 +71,7 @@ class Contact extends React.Component {
             </div>
         <button  className="btn btn-primary">Send Message</button>
         </form>
+        </div>
         </Fade>
 </Layout>
         )
