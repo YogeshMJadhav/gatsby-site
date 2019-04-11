@@ -25,7 +25,7 @@ class Contact extends React.Component {
             <Layout>
   <SEO title="Contact" />
   <Fade>
-        {/* <div>
+        <div>
             <form name=" contact"
                   method="post"
                   data-netlify="true"
@@ -38,8 +38,8 @@ class Contact extends React.Component {
              <input type="text" name="Subject" placeholder="subject" />
              <button>Save</button>
             </form>
-        </div> */}
-        <div>
+        </div>
+        {/* <div>
         <form 
             name="contact"
             method="post"
@@ -71,7 +71,7 @@ class Contact extends React.Component {
             </div>
         <button type="submit"  className="btn btn-primary">Send Message</button>
         </form>
-        </div>
+        </div> */}
         </Fade>
 </Layout>
         )
