@@ -69,7 +69,7 @@ class Contact extends React.Component {
                 <label htmlFor="inputMessage">Message </label>
                 <textarea name="message" className="form-control" placeholder="Message" id="inputMessage" rows="3"></textarea>
             </div>
-        <button  className="btn btn-primary">Send Message</button>
+        <button type="submit"  className="btn btn-primary">Send Message</button>
         </form>
         </div>
         </Fade>
