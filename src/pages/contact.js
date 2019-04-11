@@ -24,8 +24,8 @@ const Contact = () => (
                                 <div className="col-md-7 mb-5">
                                     <h3 className="mb-4"> Contact Form </h3>
                                         <form 
-                                            name=" contact"
-                                            method="post"
+                                            name="contact"
+                                            method="POST"
                                             data-netlify="true"
                                             data-netlify-honeypot="bot-field"
                                         >
