@@ -47,10 +47,10 @@ const Contact = () => (
                                                 <label htmlFor="inputSubject">Subject</label>
                                                 <input type="text" name="subject" className="form-control" id="inputSubject" placeholder="Subject"/>
                                             </div>
-                                            <div className="form-group">
+                                            {/* <div className="form-group">
                                                 <label htmlFor="inputMessage">Message </label>
                                                 <textarea name="message" className="form-control" placeholder="Message" id="inputMessage" rows="3"></textarea>
-                                            </div>
+                                            </div> */}
                                         <button>Send Message</button>
                                         </form>
                                 </div>
