@@ -22,7 +22,9 @@ class Contact extends React.Component {
             //         <button>Send Message</button>
             //     </form>
             // </div>
-            
+            <Layout>
+  <SEO title="Contact" />
+  <Fade>
         <div>
             <form name=" contact"
                   method="post"
@@ -37,6 +39,9 @@ class Contact extends React.Component {
              <button>Save</button>
             </form>
         </div>
+        
+        </Fade>
+</Layout>
         )
     }
 }
