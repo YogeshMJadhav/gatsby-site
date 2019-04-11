@@ -5,7 +5,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Fade from 'react-reveal/Fade';
 
-const Contact = () => (
+class Contact extends React.Component{
+
+    function(e){
+        e.preventDefault();
+    }
+
+    render(){
+        return(
 <Layout>
   <SEO title="Contact" />
   <Fade>
@@ -23,7 +30,7 @@ const Contact = () => (
                             <div className="row">
                                 <div className="col-md-7 mb-5">
                                     <h3 className="mb-4"> Contact Form </h3>
-                                        <form 
+                                        <form onSubmit = {this.function}
                                             name="contact"
                                             method="post"
                                             data-netlify="true"
@@ -82,6 +89,8 @@ const Contact = () => (
     </div>
   </Fade>
 </Layout>
-)
+        )
+    }
+}
 
 export default Contact;
