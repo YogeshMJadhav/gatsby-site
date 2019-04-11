@@ -24,9 +24,9 @@ const Contact = () => (
                                 <div className="col-md-7 mb-5">
                                     <h3 className="mb-4"> Contact Form </h3>
                                         <form 
-                                            name="contact"
+                                            name="contact form"
                                             method="POST"
-                                            data-netlify="true"
+                                            netlify
                                             data-netlify-honeypot="bot-field"
                                         >
                                             <div className="form-row">
@@ -43,7 +43,7 @@ const Contact = () => (
                                             </div>
                                             <div className="form-group">
                                             <label htmlFor="inputEmail">Email</label>
-                                            <input type="email" name="email"  className="form-control" id="inputEmail" placeholder="Email"/>
+                                            <input type="email" name="email" className="form-control" id="inputEmail" placeholder="Email"/>
                                             </div>
                                             <div className="form-group">
                                                 <label htmlFor="inputSubject">Subject</label>
