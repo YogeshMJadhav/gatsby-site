@@ -53,7 +53,7 @@ const Contact = () => (
                                                 <label htmlFor="inputMessage">Message </label>
                                                 <textarea name="message" className="form-control" placeholder="Message" id="inputMessage" rows="3"></textarea>
                                             </div>
-                                        <button  type="submit" className="btn btn-primary">Send Message</button>
+                                        <button>Send Message</button>
                                         </form>
                                 </div>
                                 <div className="col-md-5">
