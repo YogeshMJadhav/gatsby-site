@@ -32,6 +32,7 @@ class Contact extends React.Component{
                                                             method="post"
                                                             data-netlify="true"
                                                             data-netlify-honeypot="bot-field"
+                                                            action="/success"
                                                         >
                                                             <div className="form-row">
                                                                 <div className="form-group col-lg-6">
