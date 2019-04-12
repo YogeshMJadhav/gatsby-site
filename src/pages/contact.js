@@ -27,18 +27,54 @@ class Contact extends React.Component{
                                             <div className="row">
                                                 <div className="col-md-7 mb-5">
                                                     <h3 className="mb-4"> Contact Form </h3>
-                                                        <form 
-                                                            name="contact form gatsby"
-                                                            method="post"
-                                                            data-netlify="true"
-                                                            data-netlify-honeypot="bot-field"
-                                                            action="/success"
-                                                        >
-                                                        <input type="text" name="First Name" placeholder="First Name" />
-              <input type="text" name="Last Name" placeholder="Last Name"/>
-              <input type="text" name="email"placeholder="email" />
-              <input type="text" name="Address" placeholder="Address" />
-              <input type="text" name="Subject" placeholder="subject" />
+<form 
+    name="contact form gatsby"
+    method="post"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    action="/success"
+>
+        
+
+{// test 
+}
+
+<div className="form-row">
+        <div className="form-group col-lg-6">
+        <label htmlFor="firstName">First Name</label>
+        <input type="text" name="First Name" className="form-control" id="firstName" placeholder="First Name"/>
+        </div>
+
+        <div className="form-group col-lg-6">
+        <label htmlFor="inputLastName">Last Name</label>
+        <input type="text" name="Last Name" className="form-control" id="inputLastName" placeholder="Last Name"/>
+        </div>
+        
+    </div>
+    <div className="form-group">
+    <label htmlFor="inputEmail">Email</label>
+    <input type="email" name="email"  className="form-control" id="inputEmail" placeholder="Email"/>
+    </div>
+    
+    <div className="form-group">
+        <label htmlFor="inputMessage">Message </label>
+        <textarea name="Subject" className="form-control" placeholder="Message" id="inputMessage" rows="3"></textarea>
+    </div>
+    <div className="form-group">
+        <label htmlFor="inputSubject">Subject</label>
+        <input type="text" name="Address" className="form-control" id="inputSubject" placeholder="Subject"/>
+    </div>
+
+
+{ // test 
+}
+
+
+
+
+
+
+
                                                             {/* <div className="form-row">
                                                                 <div className="form-group col-lg-6">
                                                                 <label htmlFor="firstName">First Name</label>
