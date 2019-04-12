@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Fade from 'react-reveal/Fade';
@@ -35,13 +34,13 @@ class Contact extends React.Component{
                                                             action="/success"
                                                         >
                                                         
-              <input type="text" name="First Name" placeholder="First Name" />
+              {/* <input type="text" name="First Name" placeholder="First Name" />
               <input type="text" name="Last Name" placeholder="Last Name"/>
               <input type="text" name="Email"placeholder="Email" />
               <input type="text" name="Address" placeholder="Address" />
-              <input type="text" name="Subject" placeholder="Subject" />
+              <input type="text" name="Subject" placeholder="Subject" /> */}
 
-                                                            {/* <div className="form-row">
+                                                            <div className="form-row">
                                                                 <div className="form-group col-lg-6">
                                                                 <label htmlFor="firstName">First Name</label>
                                                                 <input type="text" name="firstname" className="form-control" id="firstName" placeholder="First Name"/>
@@ -64,8 +63,8 @@ class Contact extends React.Component{
                                                             <div className="form-group">
                                                                 <label htmlFor="inputMessage">Message </label>
                                                                 <textarea name="message" className="form-control" placeholder="Message" id="inputMessage" rows="3"></textarea>
-                                                            </div> */}
-                                                        <button  className="btn btn-primary">Send Message</button>
+                                                            </div>
+                                                        <button type="submit" className="btn btn-primary">Send Message</button>
                                                         </form>
                                                 </div>
                                                 <div className="col-md-5">
