@@ -29,8 +29,8 @@ class Contact extends React.Component{
                                                     <h3 className="mb-4"> Contact Form </h3>
                                                         <form 
                                                             name="contact form gatsby"
+                                                            method="POST"
                                                             action="/success"
-                                                            method="post"
                                                             netlify
                                                         >
                                                         
