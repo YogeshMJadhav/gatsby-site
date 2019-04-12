@@ -30,6 +30,7 @@ class Contact extends React.Component{
                                                         <form 
                                                             name="contact form gatsby"
                                                             action="/success"
+                                                            method="post"
                                                             netlify
                                                         >
                                                         
