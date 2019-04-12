@@ -30,9 +30,8 @@ class Contact extends React.Component{
                                                         <form 
                                                             name="contact form gatsby"
                                                             method="post"
-                                                            data-netlify="true"
-                                                            data-netlify-honeypot="bot-field"
                                                             action="/success"
+                                                            netlify
                                                         >
                                                         
               
