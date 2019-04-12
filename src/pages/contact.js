@@ -34,9 +34,8 @@ class Contact extends React.Component{
                                                             data-netlify-honeypot="bot-field"
                                                             action="/success"
                                                         >
-            <p>                                           
+                                                        
               <input type="text" name="First Name" placeholder="First Name" />
-              </p>
               <input type="text" name="Last Name" placeholder="Last Name"/>
               <input type="text" name="email"placeholder="email" />
               <input type="text" name="Address" placeholder="Address" />
