@@ -28,7 +28,7 @@ class Contact extends React.Component{
                                                 <div className="col-md-7 mb-5">
                                                     <h3 className="mb-4"> Contact Form </h3>
                                                         <form 
-                                                            name="contact"
+                                                            name="contact form gatsby"
                                                             method="post"
                                                             data-netlify="true"
                                                             data-netlify-honeypot="bot-field"
