@@ -29,30 +29,16 @@ class Contact extends React.Component{
                                                     <h3 className="mb-4"> Contact Form </h3>
                                                         <form 
                                                             name="contact form gatsby"
-                                                            method="POST"
+                                                            method="post"
+                                                            data-netlify="true"
+                                                            data-netlify-honeypot="bot-field"
                                                             action="/success"
-                                                            netlify
                                                         >
-                                                        
-              
-             <label className="form-group col-lg-6">
-              <input type="text" name="First Name" placeholder="First Name" />
-              </label>
+                                                        <input type="text" name="First Name" placeholder="First Name" />
               <input type="text" name="Last Name" placeholder="Last Name"/>
               <input type="text" name="email"placeholder="email" />
               <input type="text" name="Address" placeholder="Address" />
               <input type="text" name="Subject" placeholder="subject" />
-
-             
-
-
-
-
-
-
-
-
-
                                                             {/* <div className="form-row">
                                                                 <div className="form-group col-lg-6">
                                                                 <label htmlFor="firstName">First Name</label>
