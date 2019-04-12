@@ -36,8 +36,9 @@ class Contact extends React.Component{
                                                         >
                                                         
               
-             
-              <input  className="form-group col-lg-6" type="text" name="First Name" placeholder="First Name" />
+             <label className="form-group col-lg-6">
+              <input type="text" name="First Name" placeholder="First Name" />
+              </label>
               <input type="text" name="Last Name" placeholder="Last Name"/>
               <input type="text" name="email"placeholder="email" />
               <input type="text" name="Address" placeholder="Address" />
