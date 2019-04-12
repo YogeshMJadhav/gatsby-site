@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@contentful/gatsby-transformer-contentful-richtext": "^13.1.0",
     "bluebird": "^3.5.4",
     "gatsby": "^2.3.16",
     "gatsby-image": "^2.0.37",
@@ -16,7 +17,6 @@
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-remark": "^2.3.8",
     "gatsby-transformer-sharp": "^2.1.17",
-    "netlify": "^2.4.1",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",

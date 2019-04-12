@@ -81,7 +81,8 @@ return  (
                     </div>    
                 </div>
                 <div className="row">
-                    {post.content && <div className="col-12">
+                    {post.content && 
+                    <div className="col-12">
                         <p
                         dangerouslySetInnerHTML={{
                             __html: post.content.childMarkdownRemark.html,
@@ -92,8 +93,8 @@ return  (
                      post.cardPost && 
                      post.cardPost.map((item) => {
                          console.log(item);
-                         
-                         return (
+                         if(!item.images) {
+                              return (
                           <div className="col-md-4  mt-3">
                             <div className="h-100   layout-border p-3 br10 ">
                             <h5> {item.title} </h5>          
@@ -105,29 +106,30 @@ return  (
                             </div>    
                          </div>   
                          )
+                         }
+                        else {
+                          return(
+                            <div className="col-md-6 mt-3">
+                            <div className="h-100 p-3 layout-border br10" >
+                            {
+                                item.images.map((image) => {
+                                    return(
+                                        <img src={image.file.url} alt="Opencart" title="Opencart" width="40" className="mr-1" />
+                                    )
+                                })
+                            }
+                                <h5> {item.title} </h5>          
+                                <p
+                                   dangerouslySetInnerHTML={{
+                                   __html: item.content.childMarkdownRemark.html,
+                                  }}
+                               />    
+                            </div>    
+                        </div>
+                          )
+                        }
                      })
                    }
-
-                    {/* {
-                      post.cardPost.images && 
-                      post.cardPost.map((item,index) => {
-                          log(item)
-                          return (
-                             <div className="col-md-6 mt-3">
-                        <div className="h-100 p-3 layout-border br10" >
-                            <img src={item.images[index].file.url} alt="Opencart" title="Opencart" width="40" className="mr-1" />
-                            <h5> {item.title}</h5>          
-                            <p
-                        dangerouslySetInnerHTML={{
-                            __html: item.content.childMarkdownRemark.html,
-                        }}
-                        />
-                        </div>    
-                       </div> 
-                          )
-                      })
-                    } */}
-
                 </div>    
             </div>
                 </div>

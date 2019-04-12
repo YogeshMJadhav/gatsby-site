@@ -5,7 +5,6 @@ exports.createPages=({graphql,boundActionCreators}) => {
     const {createPage} =boundActionCreators
     return new Promise((resolve ,reject) =>{
         const post=path.resolve('src/templates/service-view.js')
-        const company=path.resolve('src/components/header.js')
         resolve(
             graphql(`
             {
@@ -14,21 +13,6 @@ exports.createPages=({graphql,boundActionCreators}) => {
                       node{
                         slug
                         id
-                      }
-                    }
-                  }
-                  contentfulCompanyOverview{
-                    slug
-                    phone1
-                    phone2
-                    mailId1
-                    facebook
-                    instagram
-                    linkedin
-                    ivisionLogo{
-                      file
-                      {
-                        url
                       }
                     }
                   }
@@ -46,13 +30,7 @@ exports.createPages=({graphql,boundActionCreators}) => {
                         }
                     }) 
                 })
-                createPage({
-                    path:'header',
-                    component:company,
-                    context:{
-                       company:result.data.contentfulCompanyOverview
-                    }
-                }) 
+               
             })
         )
     })

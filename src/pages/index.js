@@ -13,12 +13,9 @@ class IndexPage extends React.Component{
   render() {
     const service = this.props.data.allContentfulServices.edges;
     const portfolio = this.props.data.allContentfulPortfolio.edges;
-    const company=this.props.data.contentfulCompanyOverview;
-    // console.log(company);
-    
  return (
   <div>
-  <Layout company={company}>
+  <Layout >
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Fade>
     <div className="slick-wrapper">

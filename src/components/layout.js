@@ -15,12 +15,27 @@ import Footer from "../components/footer";
 
 const Layout = ({ children }) => (
   <StaticQuery
-  
+   
     query={graphql`
       query SiteTitleQuery {
         site {
           siteMetadata {
             title
+          }
+        }
+        contentfulCompanyOverview{
+          slug
+          phone1
+          phone2
+          mailId1
+          facebook
+          instagram
+          linkedin
+          ivisionLogo{
+            file
+            {
+              url
+            }
           }
         }
       }
@@ -36,9 +51,9 @@ const Layout = ({ children }) => (
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
       </Helmet>
       <div className="wrapper">
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} companyOverview={data.contentfulCompanyOverview} />
           <main>{children}</main>
-        <Footer/>
+        <Footer  siteTitle={data.site.siteMetadata.title} companyOverview={data.contentfulCompanyOverview}/>
       </div>
       </>
     )}

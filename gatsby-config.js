@@ -24,6 +24,7 @@ module.exports = {
     'gatsby-transformer-remark',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `@contentful/gatsby-transformer-contentful-richtext`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
