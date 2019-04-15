@@ -92,7 +92,7 @@ query Carrer {
           experience
           skillsRequired
           description{
-            childMarkdownRemark{
+            childContentfulRichText{
               html
             }
           }
